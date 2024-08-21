@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Developer - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #07156f;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        height: 100px;
+        align-items: center;
+      }
+      @media screen and (max-width: 815px) {
+        .right {
+          display: none;
+        }
+        nav {
+          justify-content: flex-start;
+          align-items: center;
+          padding-left: 2rem;
+        }
+      }
+
+      nav ul {
+        display: flex;
+        text-decoration: none;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+        /* text-decoration: none; */
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(187, 187, 216);
+      }
+
+      .left {
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      .section {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px;
+        align-items: center;
+      }
+      @media screen and (max-width: 815px) {
+        .section {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 1rem;
+          gap: 1rem;
+        }
+      }
+      .leftsection {
+        width: 35%;
+        font-size: 2.5rem;
+      }
+      .btn {
+        border: 2px solid white;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #521dd7;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .rightsection {
+        width: 35%;
+        /* background: white; */
+      }
+      .rightsection > img {
+        width: 80%;
+        margin: 30px 15px;
+      }
+      .color {
+        color: rgb(138, 138, 241);
+      }
+      #element {
+        color: rgb(138, 138, 241);
+      }
+      hr {
+        border: 0px;
+        height: 1px;
+        background-color: rgb(72, 154, 225);
+        margin: 30px;
+      }
+      .secondsection {
+        margin: auto;
+        max-width: 80vw;
+        min-height: 60vh;
+      }
+      .secondsection > h1 {
+        font-size: 2rem;
+      }
+      .learn {
+        color: rgb(135, 134, 134);
+        font-size: smaller;
+      }
+      main > h1 {
+        margin: 10px;
+      }
+      .horizontal_line {
+        border: 0px;
+        background-color: white;
+        height: 3px;
+        width: 80vw;
+        margin-top: 30px;
+      }
+      .vertical {
+        border: 1px;
+        background-color: white;
+        width: 3px;
+        height: 50px;
+      }
+      .box {
+        display: flex;
+        justify-content: space-between;
+      }
+      .box > img {
+        height: 60px;
+      }
+      .box > #img1 {
+        position: relative;
+        left: -29px;
+        top: -10px;
+      }
+      .box > #img2 {
+        position: relative;
+        right: -16px;
+        top: -9px;
+      }
+      .box > #img3 {
+        position: relative;
+        right: -45px;
+        top: -7px;
+      }
+      .box > #img4 {
+        position: relative;
+        right: -53px;
+        top: -9px;
+      }
+      footer {
+        /* height: 30vh; */
+        background-color: #060e3c;
+        /* display: flex; */
+      }
+      .footer {
+        display: flex;
+        padding: 30px;
+        justify-content: space-between;
+      }
+      .footer > div {
+        width: 125px;
+      }
+      .footer-second > ul > li a {
+        text-decoration: none;
+
+        color: white;
+      }
+      .footer-second > ul > li {
+        color: white;
+        list-style: none;
+      }
+      .copyright {
+        color: grey;
+        text-align: center;
+        padding: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Aman's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Project</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section">
+        <div class="leftsection">
+          <div>Hello My name is <span class="color">Aman</span></div>
+          <div>
+            Currently , I am learning
+            <span id="element"></span>
+            <div class="button">
+              <button class="btn">Download Resume</button>
+            </div>
+          </div>
+        </div>
+        <div class="rightsection">
+          <img src="bg3.png" alt="Developer" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondsection">
+        <span class="learn">What I Have Learned So Far</span>
+        <h1>Skills</h1>
+        <div class="horizontal_line"></div>
+        <div class="box">
+          <div class="vertical"></div>
+
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+          <div class="vertical"></div>
+        </div>
+
+        <div class="box">
+          <img id="img1" src="html_prev_ui.png" alt="HTML" />
+          <img id="img2" src="css_prev_ui.png" alt="CSS" />
+          <img id="img3" src="js_prev_ui.png" alt="JS" />
+          <img id="img4" src="react_prev_ui.png" alt="React" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-one">
+          <h2>Aman's Portfolio</h2>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/goel_aman__/">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/aman-goel-60b452256/"
+                >Linked In</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        www.Aman'sportfolio.com|All Rights Reserved copyright &copy;
+      </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web-Development", "Photo Editing", "Video Editing", "DSA"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
